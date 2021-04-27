@@ -68,5 +68,63 @@
 
 body {
     font-family: var(--font-main);
+    box-sizing: border-box;
+}
+
+/* FRONT PAGE */
+
+.navigation {
+    width: 100%;
+    text-align: justify;
+}
+
+.hire-me-btn {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+    text-decoration: none;
+}
+
+.mobile-menu {
+    width: 30px;
+    height: 30px;
+    background-color: var(--c-accent);
+    display: block;
+}
+
+.mobile-menu i {
+    color: var(--txt-c-light);
+    width: 10px;
+}
+
+.front-page {
+    width: 320px;
     background-color: var(--c-dark);
+    padding: 30px 10px 55px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--txt-c-light);
+}
+
+.front-page-my-name {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+}
+
+.front-page-profession {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+
+.front-page-description {
+    font-size: 16px;
+    line-height: 150%;
 }
