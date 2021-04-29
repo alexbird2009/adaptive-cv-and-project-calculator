@@ -3,6 +3,7 @@
     --c-dark: #141d2d;
     --c-light: #fff;
     --c-accent: #ff6b08;
+    --c-gray: #4e586a;
 
     --c-dark-blue: #253045;
     --c-grey-blue: #4a5771;
@@ -71,11 +72,49 @@ body {
     box-sizing: border-box;
 }
 
+/* COMMON */
+
+.accent-btn {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    background-color: var(--c-accent);
+    border: none;
+    outline: none;
+    padding: 20px 35px;
+}
+
+.accent-color {
+    color: var(--c-accent);
+}
+
 /* FRONT PAGE */
+
+.front-page {
+    width: 320px;
+    background-color: var(--c-dark);
+    padding: 30px 10px 55px 10px;
+    box-sizing: border-box;
+    color: var(--txt-c-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .navigation {
     width: 100%;
-    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-right {
+    display: flex;
+    align-items: center;
 }
 
 .hire-me-btn {
@@ -86,26 +125,20 @@ body {
     text-transform: uppercase;
     color: var(--txt-c-accent);
     text-decoration: none;
+    margin: 0 20px 0 0;
 }
 
 .mobile-menu {
     width: 30px;
     height: 30px;
     background-color: var(--c-accent);
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .mobile-menu i {
-    color: var(--txt-c-light);
-    width: 10px;
-}
-
-.front-page {
-    width: 320px;
-    background-color: var(--c-dark);
-    padding: 30px 10px 55px 10px;
-    box-sizing: border-box;
-    text-align: center;
     color: var(--txt-c-light);
 }
 
@@ -115,6 +148,7 @@ body {
     line-height: 31px;
     text-transform: uppercase;
     color: var(--txt-c-accent);
+    margin: 35px 0 10px 0;
 }
 
 .front-page-profession {
@@ -122,9 +156,93 @@ body {
     font-size: 35px;
     line-height: 42px;
     text-transform: uppercase;
+    margin: 15px 0 20px 0;
 }
 
 .front-page-description {
     font-size: 16px;
     line-height: 150%;
+    margin: 20px 0 20px 0;
+}
+
+.front-page-gallery-btn {
+    margin: 0 0 40px 0;
+}
+
+.front-page-my-photo {
+    width: 100px;
+    margin: 0 0 20px 0;
+}
+
+.front-page-my-description {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin: 0 0 15px 0;
+}
+
+.front-page-my-video-btn {
+    color: var(--txt-c-accent);
+    padding: 10px 45px;
+    background: transparent;
+    border: 2px solid var(--c-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 35px 0;
+}
+
+.front-page-my-video-btn .fa-play {
+    font-size: 9px;
+    margin: 0 7px 0 0;
+}
+
+.front-page-laptop {
+    width: 255px;
+    margin: 0 0 40px 0;
+}
+
+/* EXPERIENCE */
+.experience-container {
+    width: 175px;
+}
+
+.experience-title {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin: 0 0 30px 0;
+}
+
+.experience-skill {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 5px;
+}
+
+.experience-power {
+    margin: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    color: var(--c-gray);
+}
+
+.experience-power-item {
+    font-size: 8px;
+    margin: 0 5px 0 0;
+}
+
+.skill-name {
+    color: var(--txt-c-light);
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    margin: 0;
 }
