@@ -85,6 +85,7 @@ body {
     border: none;
     outline: none;
     padding: 20px 35px;
+    cursor: pointer;
 }
 
 .accent-color {
@@ -131,6 +132,7 @@ body {
 
 .navigation {
     width: 100%;
+    max-width: 470px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,6 +186,8 @@ body {
 }
 
 .front-page-description {
+    width: 100%;
+    max-width: 475px;
     font-size: 16px;
     line-height: 150%;
     margin: 20px 0 20px 0;
@@ -410,6 +414,7 @@ body {
 .team-projects .container {
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 0;
 }
 
 .team-projects-title {
@@ -446,4 +451,208 @@ body {
 
 .team-project-item:last-child {
     margin-bottom: 0;
+}
+
+/* CALLBACK FORM SECTION */
+
+.callback-form-container {
+    background-color: var(--c-dark);
+    padding: 35px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 560px;
+}
+
+.callback-form-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    min-width: 260px;
+    margin: 0 0 20px 0;
+}
+
+.callback-form-description {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-light);
+    margin: 0 0 30px 0;
+}
+
+.callback-form-input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 10px 15px 10px;
+    border-bottom: 1px solid var(--c-grey-blue);
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--c-grey-blue);
+    margin: 0 0 30px 0;
+}
+
+.callback-form-submit {
+    width: 240px;
+    padding: 15px 15px 15px 10px;
+}
+
+/* CALCULATOR FORM SECTION */
+
+.calculator {
+    background: var(--c-dark);
+}
+
+.calculator .container {
+    padding: 0 0 75px 0;
+}
+
+.calculator-icon {
+    width: 195px;
+}
+
+.calculator-descr {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-light);
+    margin: 0 0 30px 0;
+}
+
+.calculator-descr span {
+    background: var(--c-accent);
+    padding: 5px;
+}
+
+.calculator-descr .calculator-descr-accent {
+    padding: 5px 10px;
+}
+
+.calculator-title {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.calculator-text {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-light);
+    margin: 20px 0 30px 0;
+}
+
+.calculator-form {
+    background-color: var(--c-light);
+    padding: 30px 25px;
+}
+
+.calculator-form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+}
+
+.calculator-form-input select {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--c-grey);
+    padding: 5px 0 15px 0;
+}
+
+.calculator-form-title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+    margin: 0 0 15px 0;
+}
+
+.calculator-form-input-radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.calculator-form-input-radio-label {
+    margin: 0 20px 0 10px;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+}
+
+.calculator-form-total-cost {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+    margin: 0;
+}
+
+.calculator-form-total-cost-title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+    margin: 0 0 15px 0;
+    margin: 0;
+}
+
+.calculator-form-submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+.footer {
+}
+
+.footer .container {
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-dark);
+    padding: 30px 30px 50px 30px;
+}
+
+.footer-info,
+.footer-contacts {
+    margin: 0 0 30px 0;
+}
+
+.footer-info-name,
+.footer-info-profession {
+    margin: 0;
+}
+
+.footer-info-name {
+    margin: 0 0 10px 0;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: var(--txt-c-dark);
+}
+
+.footer-info-name,
+.footer-contacts-phone {
+    font-weight: bold;
+}
+
+.footer-contacts-phone {
+    margin: 0 0 15px 0;
+}
+
+.footer-networks {
+    font-size: 30px;
+    letter-spacing: 5px;
 }
