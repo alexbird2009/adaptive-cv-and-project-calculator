@@ -119,7 +119,7 @@ body {
 /* FRONT PAGE */
 
 .front-page {
-    width: 100%;
+    width: 320px;
     background-color: var(--c-dark);
     padding: 30px 10px 55px 10px;
     box-sizing: border-box;
@@ -132,7 +132,6 @@ body {
 
 .navigation {
     width: 100%;
-    max-width: 470px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -462,8 +461,7 @@ body {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 560px;
+    width: 320px;
 }
 
 .callback-form-title {
@@ -611,9 +609,6 @@ body {
 
 /* FOOTER */
 
-.footer {
-}
-
 .footer .container {
     font-size: 17px;
     line-height: 150%;
@@ -622,37 +617,47 @@ body {
     padding: 30px 30px 50px 30px;
 }
 
-.footer-info,
-.footer-contacts {
-    margin: 0 0 30px 0;
+.footer-info {
+    margin: 0 0 20px 0;
 }
 
 .footer-info-name,
 .footer-info-profession {
     margin: 0;
+    text-align: center;
 }
 
 .footer-info-name {
     margin: 0 0 10px 0;
 }
 
-.footer-contacts a {
+.footer-contacts {
+    margin: 0 0 30px 0;
+}
+
+.footer-contacts-phone,
+.footer-contacts-mail {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     color: var(--txt-c-dark);
 }
 
-.footer-info-name,
 .footer-contacts-phone {
     font-weight: bold;
-}
-
-.footer-contacts-phone {
     margin: 0 0 15px 0;
 }
 
-.footer-networks {
-    font-size: 30px;
-    letter-spacing: 5px;
+.footer-networks-item {
+    text-decoration: none;
+    margin: 0 22px 0 0;
+}
+
+.footer-networks-item:last-child {
+    margin: 0;
+}
+
+.footer-networks-icon {
+    font-size: 25px;
+    color: var(--c-dark);
 }
