@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <style>
+    .modal {
+      display: none;
+    }
+  </style>
+
   <link rel="stylesheet" href="/css/normalize.min.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/choices.min.css">
@@ -103,7 +109,7 @@
     </div>
   </section>
   <!-- /.front-page -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container container-left">
       <h3 class="section-title about-title">I code things from scratch_</h3>
       <p class="about-descr">
@@ -129,7 +135,7 @@
     </div>
   </section>
   <!-- /.about -->
-  <section class="personal-projects">
+  <section class="personal-projects" id="projects">
     <div class="container">
       <h3 class="section-title personal-projects-title">My personal _projects</h3>
 
@@ -251,7 +257,7 @@
     </div>
   </section>
   <!-- /.callback-form -->
-  <section class="calculator">
+  <section class="calculator" id="calculator">
     <div class="container">
       <h3 class="calculator-title section-title">
         Calculate_ the cost of a future project
@@ -324,11 +330,11 @@
           <input type="submit" class="accent-btn" value="Find out the cost  —">
         </div>
       </form>
-      <!-- /.calculator -->
     </div>
   </section>
+  <!-- /.calculator -->
 
-  <footer>
+  <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer-info">
         <h3 class="footer-info-name">Oleksandr Boloban</h3>
@@ -350,9 +356,33 @@
         <a href="http://instagram.com" target="_blank" class="footer-networks-item"><i
             class="fab fa-instagram footer-networks-icon"></i></a>
       </div>
-
     </div>
   </footer>
+
+  <!-- MODAL WINDOWS -->
+  <div class="modal-wrapper">
+    <!-- MOBILE MENU -->
+    <div class="modal modal-mobile-menu ">
+      <div class="modal-mobile-content">
+        <div class="container mobile-menu-container">
+          <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+          <nav class="mobile-menu-list">
+            <a href="#about" class="mobile-menu-list mobile-menu-item">ABOUT</a>
+            <a href="#projects" class="mobile-menu-list mobile-menu-item">PROJECTS</a>
+            <a href="#calculator" class="mobile-menu-list mobile-menu-item">COST CALCULATOR</a>
+            <a href="#contacts" class="mobile-menu-list mobile-menu-item">CONTACTS</a>
+          </nav>
+          <div class="mobile-menu-contacts">
+            <a href="tel:+380505555555" class="mobile-menu-contacts-phone">+38 (050)555 55 55</a>
+            <a href="mailto:example@gmail.com" class="mobile-menu-contacts-mail">example@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.modal-wrapper -->
+
   <!-- SCRIPTS -->
   <script src="/js/choices.min.js"></script>
   <script src="/js/calculator.js"></script>

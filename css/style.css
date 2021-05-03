@@ -67,6 +67,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-main);
     box-sizing: border-box;
@@ -114,6 +118,96 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: var(--txt-c-light);
+}
+
+/* MODAL WINDOWS */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    display: block;
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-mobile-menu {
+    background-color: var(--txt-c-light);
+}
+
+.modal-mobile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.mobile-menu-container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.modal-close-btn {
+    font-size: 18px;
+    position: absolute;
+    color: var(--txt-c-grey);
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.mobile-menu-close-btn {
+    background-color: var(--c-accent);
+    color: var(--c-light);
+    padding: 10px 13px;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu-item {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-grey);
+    text-decoration: none;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.mobile-menu-contacts {
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-c-dark);
+    margin: 0 0 60px 0;
+}
+
+.mobile-menu-contacts-phone,
+.mobile-menu-contacts-mail {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: var(--txt-c-dark);
+}
+
+.mobile-menu-contacts-phone {
+    font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
 /* FRONT PAGE */
