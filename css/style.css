@@ -17,6 +17,9 @@
     --txt-c-accent: var(--c-accent);
     --txt-c-light: var(--c-light);
 
+    /* modal windows */
+    --modal-bg-dark: rgba(20, 29, 45, 0.8);
+
     /* font */
     --font-main: "Acrom", sans-serif;
 
@@ -132,12 +135,19 @@ body {
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
     display: block;
+    background-color: var(--modal-bg-dark);
 }
 
 .modal-active {
     opacity: 1;
     pointer-events: all;
 }
+
+.body-scroll-disable {
+    overflow: hidden;
+}
+
+/* MOBILE MENU */
 
 .modal-mobile-menu {
     background-color: var(--txt-c-light);
@@ -170,7 +180,7 @@ body {
 .mobile-menu-close-btn {
     background-color: var(--c-accent);
     color: var(--c-light);
-    padding: 10px 13px;
+    padding: 7px 10px;
 }
 
 .mobile-menu-list {
@@ -210,6 +220,86 @@ body {
     margin: 0 0 10px 0;
 }
 
+/* MODAL VIDEO */
+
+.modal-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.modal-video-content {
+    width: 100%;
+}
+
+.modal-video-close-btn {
+    background-color: var(--c-light);
+    color: var(--c-dark);
+    padding: 10px 13px;
+}
+
+/* MODAL REQUEST */
+
+.modal-request {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-request-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+}
+
+.modal-request-content {
+    width: 100%;
+}
+
+.modal-request-close-btn {
+    background-color: var(--c-light);
+    padding: 10px 13px;
+    font-size: 21px;
+    position: relative;
+    top: -40px;
+    right: -120px;
+    color: var(--txt-c-grey);
+}
+
+.modal-request-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+    margin: 0 0 20px 0;
+}
+
+.modal-request-confirm {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--txt-c-dark);
+    margin: 0 0 20px 0;
+    width: 240px;
+}
+
+.modal-request-answer {
+    font-size: 17px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--txt-c-dark);
+}
+
 /* FRONT PAGE */
 
 .front-page {
@@ -222,6 +312,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .navigation {
