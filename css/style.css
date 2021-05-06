@@ -123,6 +123,14 @@ body {
     color: var(--txt-c-light);
 }
 
+.tablet-element {
+    display: none;
+}
+
+.desktop-element {
+    display: none;
+}
+
 /* MODAL WINDOWS */
 
 .modal {
@@ -439,6 +447,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .front-page-my-photo {
@@ -706,7 +715,7 @@ body {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    width: 320px;
+    min-width: 300px;
 }
 
 .callback-form-title {
@@ -956,6 +965,23 @@ body {
 }
 
 @media only screen and (min-width: 640px) {
+    .container {
+        min-width: 640px;
+        padding: 30px 20px 55px 20px;
+    }
+
+    .mobile-element {
+        display: none;
+    }
+
+    .tablet-element {
+        display: block;
+    }
+
+    .desktop-element {
+        display: none;
+    }
+
     .front-page-my-name {
         font-size: 36px;
         line-height: 43px;
@@ -985,5 +1011,100 @@ body {
         width: 400px;
         height: 60px;
         margin: 0 0 40px 0;
+    }
+
+    .front-page-my-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 60px 0;
+    }
+
+    .front-page-my-photo {
+        width: 140px;
+        margin: 0 35px 0 0;
+    }
+
+    .front-page-my-video {
+        align-items: start;
+        text-align: left;
+    }
+
+    .front-page-my-video-btn {
+        margin: 0;
+    }
+
+    .front-page-laptop {
+        width: 400px;
+        margin: 0 0 90px 0;
+    }
+
+    .experience-container {
+        margin: 0 0 45px 0;
+    }
+
+    .about .container {
+        position: relative;
+    }
+
+    .about-img-text {
+        position: absolute;
+        right: 22px;
+        top: 228px;
+        font-size: 200px;
+        line-height: 240px;
+    }
+
+    .about-img {
+        width: 361px;
+        height: 390px;
+        left: -105px;
+        top: 70px;
+    }
+
+    .about-img-container {
+        margin-bottom: 0;
+    }
+
+    .about-title {
+        font-size: 50px;
+        line-height: 60px;
+        width: 600px;
+    }
+
+    .about-descr {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 60px;
+    }
+
+    .about-text:last-child {
+        width: 320px;
+        margin-bottom: 84px;
+    }
+
+    .team-projects-title,
+    .personal-projects-title {
+        text-align: left;
+        width: 400px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .team-project-item,
+    .personal-project-item {
+        margin: 0 25px 40px 25px;
+    }
+
+    .callback-form .container,
+    .personal-projects .container,
+    .team-projects .container {
+        align-items: normal;
+    }
+
+    .team-projects-title-bgd {
+        font-size: 200px;
+        line-height: 240px;
+        top: 19px;
     }
 }
