@@ -351,7 +351,7 @@ body {
 /* FRONT PAGE */
 
 .front-page {
-    width: 320px;
+    width: 100%;
     background-color: var(--c-dark);
     padding: 30px 10px 55px 10px;
     box-sizing: border-box;
@@ -419,7 +419,7 @@ body {
 
 .front-page-description {
     width: 100%;
-    max-width: 475px;
+    max-width: 400px;
     font-size: 16px;
     line-height: 150%;
     margin: 20px 0 20px 0;
@@ -427,6 +427,18 @@ body {
 
 .front-page-gallery-btn {
     margin: 0 0 40px 0;
+}
+
+.front-page-my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.front-page-my-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .front-page-my-photo {
@@ -941,4 +953,37 @@ body {
     border-left: none;
     margin: 0;
     padding-left: 8px;
+}
+
+@media only screen and (min-width: 640px) {
+    .front-page-my-name {
+        font-size: 36px;
+        line-height: 43px;
+        margin: 40px 0 20px 0;
+    }
+
+    .front-page-profession {
+        font-size: 55px;
+        line-height: 66px;
+        margin: 0 0 30px 0;
+    }
+
+    .front-page-profession-first {
+        margin: 0 30px 0 0;
+    }
+
+    .front-page-profession-second {
+        margin: 0 0 0 40px;
+    }
+
+    .front-page-description {
+        font-size: 17px;
+        margin: 0 0 40px 0;
+    }
+
+    .front-page-gallery-btn {
+        width: 400px;
+        height: 60px;
+        margin: 0 0 40px 0;
+    }
 }
