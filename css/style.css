@@ -782,6 +782,7 @@ body {
     text-transform: uppercase;
     color: var(--txt-c-light);
     margin: 0 0 30px 0;
+    width: 275px;
 }
 
 .calculator-descr span {
@@ -795,7 +796,7 @@ body {
 
 .calculator-title {
     width: 270px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 
 .calculator-text {
@@ -1097,7 +1098,6 @@ body {
         margin: 0 25px 40px 25px;
     }
 
-    .callback-form .container,
     .personal-projects .container,
     .team-projects .container {
         align-items: normal;
@@ -1107,5 +1107,119 @@ body {
         font-size: 200px;
         line-height: 240px;
         top: 19px;
+    }
+
+    .callback-form-container {
+        min-width: 640px;
+        padding: 80px 30px;
+    }
+
+    .callback-form-title {
+        font-size: 36px;
+        line-height: 43px;
+        width: 385px;
+        margin: 0 0 25px 0;
+    }
+
+    .callback-form-description {
+        width: 355px;
+        margin: 0 0 40px 0;
+    }
+
+    .callback-form-input {
+        width: 350px;
+        box-sizing: border-box;
+    }
+
+    .callback-form-submit {
+        width: 350px;
+        margin: 10px 0 0 0;
+    }
+
+    .calculator .container {
+        align-items: normal;
+        position: relative;
+        padding: 70px 0 90px 0;
+    }
+
+    .calculator-title {
+        width: 600px;
+        font-size: 50px;
+        line-height: 60px;
+        margin: 0px 0 35px 0;
+    }
+
+    .calculator-title p {
+        margin: 0 0 0 20px;
+    }
+
+    .calculator-descr {
+        font-size: 36px;
+        margin: 10px 0;
+        width: 600px;
+    }
+
+    .calculator-descr span {
+        padding: 15px;
+        margin: 0 0 0 20px;
+    }
+
+    .calculator-icon {
+        width: 320px;
+        position: absolute;
+        z-index: 0;
+        top: 420px;
+        right: 30px;
+    }
+
+    .calculator-text {
+        width: 330px;
+        margin: 40px 0 50px 20px;
+    }
+
+    .calculator-title,
+    .calculator-descr,
+    .calculator-text {
+        text-align: left;
+    }
+
+    .calculator-form {
+        padding: 65px 75px;
+        margin: 0 15px 0 15px;
+        z-index: 1;
+    }
+
+    .calculator-form-input {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .calculator-form .accent-btn {
+        width: 100%;
+    }
+
+    .footer .container {
+        padding: 40px 20px 60px 20px;
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+
+    .footer-info-name,
+    .footer-info-profession {
+        margin: 0;
+        text-align: start;
+    }
+
+    .footer-contacts {
+        margin: 0 0 5px 0;
+        text-align: end;
+    }
+
+    lement.style {
+        text-align: start;
+    }
+
+    .footer-networks {
+        text-align: start;
     }
 }
