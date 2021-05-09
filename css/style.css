@@ -100,7 +100,6 @@ body {
 }
 
 .container {
-    min-width: 320px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -124,6 +123,11 @@ body {
     color: var(--txt-c-light);
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .tablet-element {
     display: none;
 }
@@ -145,6 +149,7 @@ body {
     pointer-events: none;
     display: block;
     background-color: var(--modal-bg-dark);
+    z-index: 99;
 }
 
 .modal-active {
@@ -496,6 +501,13 @@ body {
 }
 
 /* EXPERIENCE */
+
+.experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .experience-container {
     width: 175px;
 }
@@ -746,6 +758,12 @@ body {
     margin: 0 0 30px 0;
 }
 
+.callback-form-input-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .callback-form-input {
     background-color: transparent;
     outline: none;
@@ -782,6 +800,14 @@ body {
     width: 195px;
 }
 
+.calculator-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
 .calculator-descr {
     font-weight: bold;
     font-size: 24px;
@@ -789,7 +815,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: var(--txt-c-light);
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
     width: 275px;
 }
 
@@ -808,6 +834,7 @@ body {
 }
 
 .calculator-text {
+    width: 300px;
     font-size: 17px;
     line-height: 150%;
     text-align: center;
@@ -844,6 +871,10 @@ body {
 .calculator-form-input-radio-container {
     display: flex;
     align-items: center;
+}
+
+.calculator-form-input-area {
+    cursor: pointer;
 }
 
 .calculator-form-input-radio-label {
@@ -1061,7 +1092,7 @@ body {
     .about-img-text {
         position: absolute;
         right: 22px;
-        top: 228px;
+        top: 90px;
         font-size: 200px;
         line-height: 240px;
     }
@@ -1070,7 +1101,7 @@ body {
         width: 361px;
         height: 390px;
         left: -105px;
-        top: 70px;
+        top: 65px;
     }
 
     .about-img-container {
@@ -1181,8 +1212,13 @@ body {
         right: 30px;
     }
 
+    .calculator-text-wrapper {
+        margin: 0;
+        align-items: flex-start;
+    }
+
     .calculator-text {
-        width: 330px;
+        width: 300px;
         margin: 40px 0 50px 20px;
     }
 
@@ -1230,6 +1266,32 @@ body {
 
     .footer-networks {
         text-align: start;
+    }
+
+    .modal-request-container {
+        width: 605px;
+        padding: 0px 0 35px 0;
+    }
+
+    .modal-request-close-btn {
+        top: -50px;
+        right: -255px;
+    }
+
+    .modal-request-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .modal-request-confirm {
+        width: 350px;
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .modal-request-answer {
+        font-size: 17px;
+        line-height: 25px;
     }
 }
 
@@ -1335,7 +1397,7 @@ body {
     }
 
     .front-page-gallery-btn {
-        width: 380px;
+        width: 385px;
         margin: 0;
     }
 
@@ -1406,5 +1468,190 @@ body {
         line-height: 300px;
         top: 35px;
         left: 274px;
+    }
+
+    .about-title {
+        font-size: 70px;
+        line-height: 84px;
+        width: 620px;
+        margin-top: 0;
+    }
+
+    .about-text {
+        width: 406px;
+    }
+    .about-text:last-child {
+        width: 388px;
+        margin: 0;
+    }
+
+    .about-content-wrapper {
+        position: relative;
+    }
+
+    .about .container {
+        flex-direction: row;
+        padding: 135px 10px;
+        justify-content: space-between;
+    }
+
+    .about-projects-bar {
+        background: var(--c-accent);
+        width: 159px;
+        height: 465px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 10px 5px;
+        margin-bottom: 35px;
+        margin-top: 15px;
+    }
+
+    .about-projects {
+        z-index: 2;
+    }
+
+    .about-projects-count {
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 78px;
+        color: var(--txt-c-light);
+        margin: 0;
+    }
+
+    .about-projects-text {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 135%;
+        color: var(--txt-c-dark);
+        text-transform: uppercase;
+        width: 125px;
+    }
+
+    .about-img-text {
+        font-size: 250px;
+        line-height: 300px;
+        right: -223px;
+        top: -23px;
+        z-index: 1;
+    }
+
+    .about-img {
+        width: 421px;
+        height: 455px;
+        left: -35px;
+    }
+
+    .callback-form-container {
+        width: calc(var(--desktop-lg) - 40px);
+        padding: 90px 20px;
+    }
+
+    .callback-form-title,
+    .callback-form-description {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .callback-form-input-data {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 860px;
+        margin: 40px 0;
+    }
+
+    .callback-form-input {
+        max-width: 260px;
+        height: 40px;
+        margin: 0 40px 0 0;
+        padding: 0 0 20px 0;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .callback-form-input:last-child {
+        margin: 0;
+    }
+
+    .callback-form-submit {
+        width: 265px;
+        margin: 0;
+        padding: 14px 15px;
+    }
+
+    .calculator .container {
+        flex-direction: row;
+        padding: 150px 0;
+    }
+
+    .calculator-form {
+        padding: 40px 50px 60px 50px;
+        margin: 0 20px 0 0;
+        z-index: 1;
+        height: fit-content;
+    }
+
+    .calculator-text-wrapper {
+        margin: 15px 0 0 0;
+        align-items: flex-start;
+        width: 860px;
+    }
+
+    .calculator-title {
+        width: 100%;
+        font-size: 70px;
+        line-height: 84px;
+        margin: 0px 0 50px 0;
+    }
+
+    .calculator-text {
+        width: 350px;
+        margin: 50px 0 0 20px;
+    }
+
+    .calculator-descr span {
+        padding: 10px 20px;
+        margin: 0 0 0 20px;
+    }
+
+    .calculator-icon {
+        width: 345px;
+        position: absolute;
+        z-index: 0;
+        top: 545px;
+        left: 400px;
+    }
+
+    .hide-block {
+        display: none;
+        margin: 0;
+    }
+
+    .footer .container {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        padding: 50px 20px;
+    }
+
+    .footer-info,
+    .footer-contacts {
+        margin: 0;
+    }
+
+    .footer-contacts {
+        text-align: center;
+    }
+
+    .footer-contacts-phone {
+        margin: 0;
+    }
+
+    .footer-networks {
+        text-align: right;
+    }
+
+    .modal-area-content {
+        width: 960px;
+        height: 900px;
+        padding: 95px;
     }
 }

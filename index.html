@@ -143,28 +143,56 @@
   </section>
   <!-- /.front-page -->
   <section class="about" id="about">
+
+
     <div class="container container-left">
-      <h3 class="section-title about-title">I code things from scratch_</h3>
-      <p class="about-descr">
-        <span>[and help to</span>
-        <span>create great web</span>
-        <span>apps]</span>
-      </p>
-      <div class="about-img-container">
-        <p class="about-img-text">
-          WEB
-          <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" />
+      <div class="about-content-wrapper">
+        <h3 class="section-title about-title">I code things from scratch_</h3>
+
+        <p class="about-descr mobile-element">
+          <span>[and help to</span>
+          <span>create great web</span>
+          <span>apps]</span>
+        </p>
+
+        <div class="tablet-element desktop-element">
+          <p class="about-descr">
+            <span>[and help to create</span>
+            <span>great web apps]</span>
+          </p>
+        </div>
+
+        <div class="about-img-container">
+          <p class="about-img-text">
+            WEB
+            <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" />
+          </p>
+        </div>
+        <p class="about-text mobile-element desktop-element">
+          / I will help you to create a high-performance Landing Page, functional
+          corporate website for your business, interactive web app for SaaS,
+          startup, or other services.
+        </p>
+        <p class="about-text tablet-element">
+          / I will help you to create a<br />
+          high-performance Landing Page,<br />
+          functional corporate website for your<br />
+          business, interactive web app for<br />
+          SaaS, startup, or other services.
+        </p>
+        <p class="about-text">
+          / My specialization is front-end development — client side of the web.
+          But I also have full-stack developer experience.
         </p>
       </div>
-      <p class="about-text">
-        / I will help you to create a high-performance Landing Page, functional
-        corporate website for your business, interactive web app for SaaS,
-        startup, or other services.
-      </p>
-      <p class="about-text">
-        / My specialization is front-end development — client side of the web. But
-        I also have full-stack developer experience.
-      </p>
+
+      <div class="about-projects desktop-element">
+        <div class="about-projects-bar">
+          <p class="about-projects-count">10+</p>
+        </div>
+        <p class="about-projects-text">completed projects</p>
+      </div>
+
     </div>
   </section>
   <!-- /.about -->
@@ -289,9 +317,12 @@
       <form action="" class="callback-form-container">
         <h3 class="callback-form-title">/Are you minding [a project?]</h3>
         <p class="callback-form-description">Leave a request to discuss the task and technical requirements</p>
-        <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name">
-        <input type="email" class="callback-form-input" placeholder="aaa@aaa.aaa" id="callback-form-input-email">
-        <input type="tel" class="callback-form-input" placeholder="+380 (__) ___ __ __" id="callback-form-input-phone">
+        <div class="callback-form-input-data">
+          <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name">
+          <input type="email" class="callback-form-input" placeholder="aaa@aaa.aaa" id="callback-form-input-email">
+          <input type="tel" class="callback-form-input" placeholder="+380 (__) ___ __ __"
+            id="callback-form-input-phone">
+        </div>
         <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
       </form>
     </div>
@@ -299,29 +330,31 @@
   <!-- /.callback-form -->
   <section class="calculator" id="calculator">
     <div class="container">
-      <h3 class="calculator-title section-title">
-        <p class="mobile-element">Calculate_ the cost of a future project</p>
-        <p class="tablet-element">Calculate_<br> the cost of a<br> future project</p>
-        <p class="desktop-element">Calculate_<br> the cost of a<br> future project</p>
-      </h3>
-      <p class="calculator-descr mobile-element">
-        <span>This is an </span>
-        <span class="calculator-descr-accent">approximate</span>
-        <span>calculation.</span>
-      </p>
-      <p class="calculator-descr tablet-element">
-        <span>This is an approximate</span>
-        <span>calculation.</span>
-      </p>
-      <p class="calculator-descr desktop-element">
-        <span>This is an approximate</span>
-        <span>calculation.</span>
-      </p>
-      <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
-      <p class="calculator-text">
-        / The final cost depends on the technical requirements, terms, specifics
-        of your project.
-      </p>
+      <div class="calculator-text-wrapper">
+        <h3 class="calculator-title section-title">
+          <p class="mobile-element">Calculate_ the cost of a future project</p>
+          <p class="tablet-element">Calculate_<br> the cost of a<br> future project</p>
+          <p class="desktop-element">Calculate_<br> the cost of a<br> future project</p>
+        </h3>
+        <p class="calculator-descr mobile-element">
+          <span>This is an </span>
+          <span class="calculator-descr-accent">approximate</span>
+          <span>calculation.</span>
+        </p>
+        <p class="calculator-descr tablet-element">
+          <span>This is an approximate</span>
+          <span>calculation.</span>
+        </p>
+        <p class="calculator-descr desktop-element">
+          <span>This is an approximate</span>
+          <span>calculation.</span>
+        </p>
+        <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
+        <p class="calculator-text">
+          / The final cost depends on the technical requirements, terms, specifics
+          of your project.
+        </p>
+      </div>
       <form action="" class="calculator-form">
         <div class="calculator-form-input">
           <label for="calculator-form-website-type" class="calculator-form-title">What should be done: </label>
@@ -371,7 +404,7 @@
           </div>
         </div>
 
-        <div class="calculator-form-input">
+        <div class="calculator-form-input hide-block">
           <p class="calculator-form-total-cost-title">Cost:</p>
           <p class="calculator-form-total-cost"></p>
         </div>
