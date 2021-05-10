@@ -379,7 +379,6 @@ p {
 .front-page {
     width: 100%;
     background-color: var(--c-dark);
-    padding: 30px 10px 55px 10px;
     box-sizing: border-box;
     color: var(--txt-c-light);
     text-align: center;
