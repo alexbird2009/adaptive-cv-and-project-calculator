@@ -714,9 +714,9 @@ p {
 }
 
 .swiper-container {
-  width: 300px;
-  height: auto;
-  margin-bottom: 25px;
+    width: 300px;
+    height: auto;
+    margin-bottom: 25px;
 }
 
 .swiper-button-next,
@@ -1343,7 +1343,7 @@ p {
     .swiper-container {
         width: 600px;
     }
-    
+
     .swiper-button-next,
     .swiper-button-prev {
         opacity: 1;
@@ -1718,5 +1718,4 @@ p {
     .swiper-container {
         width: 100%;
     }
-
 }
