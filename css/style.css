@@ -1682,10 +1682,12 @@ p {
         left: 400px;
     }
 
-    .hide-block {
+    /* for hiding calculator-form-total-cost (don't forget create modal window!) 
+    
+        .hide-calculator-form-total-cost-block {
         display: none;
         margin: 0;
-    }
+    } */
 
     .footer .container {
         grid-template-columns: 33.3% 33.3% 33.3%;
